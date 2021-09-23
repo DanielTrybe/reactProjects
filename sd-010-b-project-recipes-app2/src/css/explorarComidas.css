@@ -1,0 +1,28 @@
+.title-explore-food {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 2px 6px black;
+}
+
+.all-buttons-explore-food {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.background-explore-food {
+  background-color: black;
+  background-image: url(../images/capaLogin.jpeg);
+  height: 500px;
+}
+
+.button-explore-food {
+  box-sizing: content-box;
+  font-size: 20px;
+  height: 60px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  text-align: center;
+  width: 60%;
+}
