@@ -1,0 +1,541 @@
+15:00:10 (19656) INFO ConfigReader Using stryker.conf.json
+15:00:10 (19656) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+15:00:10 (19656) DEBUG ConfigReader Loading config E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\stryker.conf.json
+15:00:10 (19656) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/components/About.js",
+    "src/App.js",
+    "src/components/FavoritePokemons.js",
+    "src/components/NotFound.js",
+    "src/components/Pokedex.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker.conf.json"
+}
+15:00:10 (19656) DEBUG PluginLoader Loading @stryker-mutator/* from E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator
+15:00:10 (19656) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:00:10 (19656) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:00:10 (19656) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:00:10 (19656) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:00:10 (19656) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:00:10 (19656) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+15:00:10 (19656) INFO InputFileResolver Found 7 of 62 file(s) to be mutated.
+15:00:10 (19656) DEBUG InputFileResolver All input files: [
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker.log",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.babelrc.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.eslintignore",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.eslintrc.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.github\\CODEOWNERS",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.github\\workflows\\main.yml",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.gitignore",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stylelintignore",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stylelintrc.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.trybe\\requirements.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\README.md",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\package-lock.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\package.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\favicon.ico",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\index.html",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\logo192.png",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\logo512.png",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\manifest.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\robots.txt",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\public\\star-icon.svg",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\App.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\App.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\About.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\Button.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\FavoritePokemons.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\NotFound.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\Pokedex.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\Pokemon.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\PokemonDetails.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\about.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\button.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\favorite-pokemons.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\index.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\not-found.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\pokedex.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\pokemon-details.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\pokemon.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\data.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\index.css",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\index.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\logo.svg",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\serviceWorker.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\services\\pokedexService.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\setupTests.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\About.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\App.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\FavoritePokemons.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\NotFound.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\Pokedex.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\Pokemon.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\tests\\PokemonDetails.test.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\types\\index.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\About.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\App.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\FavoritePokemons.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\NotFound.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\Pokedex.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\Pokemon.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\stryker\\PokemonDetails.conf.json",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\testefalhando.png",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\testepassando.png"
+]
+15:00:10 (19656) DEBUG InputFileResolver Files to mutate: [
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\App.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\About.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\FavoritePokemons.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\NotFound.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\Pokedex.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\Pokemon.js",
+  "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\src\\components\\PokemonDetails.js"
+]
+15:00:10 (19656) DEBUG TemporaryDirectory Using temp directory "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp"
+15:00:10 (19656) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+15:00:10 (19656) INFO InitialTestExecutor Starting initial test run. This may take a while.
+15:00:10 (19656) DEBUG Sandbox Creating a sandbox for files in E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:10 (19656) DEBUG Sandbox Creating test runner 0
+15:00:10 (19656) DEBUG ChildProcessProxy Starting E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 12884
+15:00:11 (12884) DEBUG ChildProcessProxyWorker Changing current working directory for this process to E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:11 (12884) DEBUG PluginLoader Loading @stryker-mutator/* from E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator
+15:00:11 (12884) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:00:11 (12884) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:00:11 (12884) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:00:11 (12884) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:00:11 (12884) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:00:11 (12884) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stryker-tmp\\sandbox2351144"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:00:11 (12884) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:00:11 (12884) DEBUG JestTestRunner Project root is E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:11 (19656) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+15:00:11 (12884) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js","^.+\\.css$":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stryker-tmp\\sandbox2351144","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:00:11 (19656) TRACE ChildProcessProxy No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+  22 files checked.
+  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+15:00:11 (19656) ERROR log4js A worker log process hung up unexpectedly Error: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:209:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+15:00:11 (19656) WARN ChildProcessProxy Child process [pid 12884] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+	  22 files checked.
+	  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	 ChildProcessCrashedError: Child process [pid 12884] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+	  22 files checked.
+	  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+    at ChildProcessProxy.handleUnexpectedExit (E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\child-proxy\ChildProcessProxy.js:33:37)
+    at ChildProcess.emit (events.js:315:20)
+    at maybeClose (internal/child_process.js:1048:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5) {
+  innerError: undefined,
+  pid: 12884,
+  exitCode: 1,
+  signal: null
+}
+15:00:11 (19656) DEBUG ChildProcessProxy Starting E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 23936
+15:00:12 (19656) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+15:00:11 (23936) DEBUG ChildProcessProxyWorker Changing current working directory for this process to E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:11 (23936) DEBUG PluginLoader Loading @stryker-mutator/* from E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator
+15:00:11 (23936) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:00:11 (23936) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:00:11 (23936) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:00:12 (23936) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:00:12 (23936) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:00:12 (23936) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stryker-tmp\\sandbox2351144"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:00:12 (23936) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:00:12 (23936) DEBUG JestTestRunner Project root is E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:12 (23936) TRACE JestLessThan25TestAdapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jest-environment-jsdom-fourteen","transform":{"^.+\\.(js|jsx|ts|tsx)$":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js","^.+\\.css$":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js","^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"rootDir":"E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stryker-tmp\\sandbox2351144","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:00:12 (19656) TRACE ChildProcessProxy No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+  22 files checked.
+  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+15:00:12 (19656) ERROR log4js A worker log process hung up unexpectedly Error: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:209:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+15:00:12 (19656) WARN ChildProcessProxy Child process [pid 23936] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+	  22 files checked.
+	  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	 ChildProcessCrashedError: Child process [pid 23936] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+	  22 files checked.
+	  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+    at ChildProcessProxy.handleUnexpectedExit (E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\child-proxy\ChildProcessProxy.js:33:37)
+    at ChildProcess.emit (events.js:315:20)
+    at maybeClose (internal/child_process.js:1048:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5) {
+  innerError: undefined,
+  pid: 23936,
+  exitCode: 1,
+  signal: null
+}
+15:00:12 (19656) DEBUG ChildProcessProxy Starting E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 15000
+15:00:12 (15000) DEBUG ChildProcessProxyWorker Changing current working directory for this process to E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:12 (15000) DEBUG PluginLoader Loading @stryker-mutator/* from E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator
+15:00:12 (15000) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:00:12 (15000) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:00:12 (15000) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:00:13 (15000) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:00:13 (15000) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:00:13 (15000) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stryker-tmp\\sandbox2351144"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:00:13 (15000) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:00:13 (15000) DEBUG JestTestRunner Project root is E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:13 (19656) DEBUG ChildProcessProxy Disposing of worker process 15000
+15:00:13 (19656) DEBUG ChildProcessProxy Kill 15000
+15:00:13 (19656) DEBUG ChildProcessProxy Starting E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 22824
+15:00:13 (22824) DEBUG ChildProcessProxyWorker Changing current working directory for this process to E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:13 (22824) DEBUG PluginLoader Loading @stryker-mutator/* from E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator
+15:00:13 (22824) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:00:13 (22824) DEBUG PluginLoader Loading plugin "E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:00:13 (22824) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:00:13 (22824) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:00:13 (22824) DEBUG PluginLoader Loading plugins E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:00:14 (22824) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jest-environment-jsdom-fourteen",
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "rootDir": "E:\\linux\\trybeProjetos\\sd-010-b-project-react-testing-library\\.stryker-tmp\\sandbox2351144"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:00:14 (22824) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:00:14 (22824) DEBUG JestTestRunner Project root is E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+15:00:14 (19656) DEBUG ChildProcessProxy Disposing of worker process 22824
+15:00:14 (19656) DEBUG ChildProcessProxy Kill 22824
+15:00:14 (19656) ERROR InitialTestExecutor One or more tests resulted in an error:
+	Test runner crashed. Tried twice to restart it without any luck. Last time the error message was: Error: Child process [pid 23936] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+	  22 files checked.
+	  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+Error: Child process [pid 23936] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\.stryker-tmp\sandbox2351144
+	  22 files checked.
+	  testMatch: E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/__tests__/**/*.{js,jsx,ts,tsx}, E:/linux/trybeProjetos/sd-010-b-project-react-testing-library\.stryker-tmp/sandbox2351144/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 22 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+    at ChildProcessProxy.handleUnexpectedExit (E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\child-proxy\ChildProcessProxy.js:33:37)
+    at ChildProcess.emit (events.js:315:20)
+    at maybeClose (internal/child_process.js:1048:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+15:00:14 (19656) ERROR StrykerCli an error occurred Error: Something went wrong in the initial test run
+    at InitialTestExecutor.validateResult (E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\process\InitialTestExecutor.js:86:15)
+    at InitialTestExecutor.run (E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\process\InitialTestExecutor.js:41:14)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Stryker.runMutationTest (E:\linux\trybeProjetos\sd-010-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\Stryker.js:53:38)

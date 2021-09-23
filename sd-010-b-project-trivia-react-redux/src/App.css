@@ -1,0 +1,463 @@
+/* Login page  */
+.login-section {
+  align-items: center;
+  background-image: url('https://img.freepik.com/free-vector/abstract-colorful-minimalist-clean-background_173783-3.jpg?size=626&ext=jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+}
+
+.login-section form {
+  width: 400px;
+}
+
+.login-section img {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.login-section input, .login-section button, .login-section a {
+  box-sizing: border-box;
+  height: 50px;
+  margin-top: 5px;
+  width: 400px;
+}
+
+.login-section input {
+  font-size: 20px;
+}
+
+.play-btn:enabled {
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  border: 3px solid rgb(1, 184, 41);
+  border-radius: 10px;
+  box-shadow: 0 0 30px green;
+  color: rgb(1, 184, 41);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.play-btn:disabled {
+  border-radius: 10px;
+  font-size: 20px;
+  text-shadow: none;
+}
+
+.config-btn:enabled {
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  border: 3px solid rgb(255, 230, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 30px yellow;
+  color: yellow;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.dev-btn:enabled {
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  border: 3px solid silver;
+  border-radius: 10px;
+  box-shadow: 0 0 30px silver;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.dev-btn:hover {
+  cursor: pointer;
+  text-shadow: 0 0 30px silver;
+}
+
+.play-btn:hover, .config-btn:hover {
+  cursor: pointer;
+  text-shadow: 0 0 30px greenyellow;
+}
+
+/* Config-page */
+.config-section {
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px darkgreen;
+  color: white;
+  height: 500px;
+  margin: 20px auto;
+  padding-top: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.config-section h1, .config-section label {
+  font-size: 24px;
+}
+
+.config-section h1 {
+  text-shadow: 0 0 7px white , 0 0 10px white;
+}
+
+.config-section form {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  justify-content: space-around;
+  margin: auto;
+  text-align: start;
+  width: 80%;
+}
+
+.config-section form select {
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  height: 30px;
+  outline: none;
+  width: stretch;
+}
+
+.config-section form option {
+  color: black;
+}
+
+.config-section-btn {
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  border-radius: 10px;
+  box-shadow: 0 0 7px white , 0 0 10px white;
+  color: #0fa;
+  cursor: pointer;
+  font-size: 50px;
+  width: 300px;
+}
+
+.config-section-btn:hover {
+  text-shadow: 0 0 7px white , 0 0 10px white;
+}
+
+.body-section {
+  align-items: center;
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+}
+
+/* Header component */
+.header-component {
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  color: white;
+  display: flex;
+  font-size: 28px;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 10px 90px;
+}
+
+.header-component img {
+  border-radius: 10px;
+}
+
+.header-name {
+  margin-left: 140px;
+}
+
+/* Jogo page */
+.game-section {
+  align-items: center;
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+.next-btn {
+  align-self: center;
+  background-color: transparent;
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  border-radius: 10px;
+  box-shadow: 0 0 7px white , 0 0 10px white , 0 0 80px #0fa , 0 0 90px #0fa;
+  color: white;
+  font-size: 30px;
+  height: 64px;
+  margin-top: 40px;
+  width: 400px;
+}
+
+.next-icon {
+  color: white;
+  font-size: 50px;
+}
+
+.next-btn:hover {
+  text-shadow: 0 0 7px white , 0 0 10px white , 0 0 102px #0fa , 0 0 151px #0fa;
+}
+
+.timer {
+  align-self: start;
+  color: white;
+  font-size: 50px;
+  margin: 30px 100px 0;
+  position: absolute;
+  text-shadow: 0 0 7px white , 0 0 10px white , 0 0 102px #0fa , 0 0 151px #0fa;
+}
+
+/* PerguntaAtual component */
+.questions-section {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 80%;
+}
+
+.questions-section button {
+  background-image: url('https://files.wallpaperpass.com/2019/10/low%20poly%20wallpaper%20052%20-%201920x1080.jpg');
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px black;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  margin-top: 10px;
+  outline: none;
+  width: 400px;
+}
+
+.ranking-page button {
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  border-radius: 10px;
+  box-shadow: 0 0 7px white , 0 0 10px white;
+  color: #0fa;
+  cursor: pointer;
+  font-size: 50px;
+  width: 300px;
+}
+
+.feedback-buttons button {
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  box-shadow: 0 0 7px white , 0 0 10px white;
+  color: #0fa;
+  cursor: pointer;
+  font-size: 100px;
+  height: 200px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.questions-section button:hover {
+  background-color: transparent;
+  text-shadow: 0 0 7px white , 0 0 10px white , 0 0 102px #0fa , 0 0 151px #0fa;
+}
+
+.questions-section div {
+  margin-bottom: 20px;
+}
+
+/* Feedback page */
+.feedback-div {
+  align-items: center;
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.feedback-score {
+  font-size: 50px;
+  margin-left: 30px;
+  text-shadow: 0 0 7px white , 0 0 10px white;
+}
+
+.feedback-score-2 {
+  display: none;
+}
+
+.feedback-main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-player-data {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.feedback-main img {
+  border-radius: 10px;
+  width: 150px;
+}
+
+.feedback-buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10%;
+}
+
+.feedback-buttons button:hover {
+  text-shadow: 0 0 7px white , 0 0 10px white;
+}
+
+.feedback-title {
+  font-size: 70px;
+  margin-top: 0;
+  text-shadow: 0 0 7px white , 0 0 10px white , 0 0 102px #0fa , 0 0 151px #0fa;
+}
+
+.feedback-results {
+  align-items: center;
+  display: flex;
+}
+
+.feedback-results span {
+  margin-left: 50px;
+}
+
+.score {
+  color: #0fa;
+}
+
+/* Ranking page */
+.ranking-page {
+  align-items: center;
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  background-position-x: -800px;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  height: max-content;
+  margin: auto;
+  min-height: 100vh;
+  padding: 20px;
+  width: fit-content;
+}
+
+.ranking-page h1 {
+  animation: flicker 1.5s infinite alternate;
+  font-size: 70px;
+  margin: 0 0 30px;
+  text-shadow: 0 0 7px white , 0 0 10px white , 0 0 102px #0fa , 0 0 151px #0fa;
+}
+
+table, th {
+  margin: 30px;
+  text-align: center;
+  width: 500px;
+}
+
+th {
+  padding-bottom: 15px;
+}
+
+.ranking-page-outer {
+  align-items: center;
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100%;
+}
+
+.ranking-page button:hover {
+  text-shadow: 0 0 7px white , 0 0 10px white;
+}
+
+.podium1 {
+  color: gold;
+  font-size: 100px;
+  text-shadow: 0 0 7px gold , 0 0 10px gold;
+}
+
+.podium2 {
+  color: silver;
+  font-size: 100px;
+  text-shadow: 0 0 7px silver , 0 0 10px silver;
+}
+
+.podium3 {
+  color: rgb(205, 127, 50);
+  font-size: 100px;
+  text-shadow: 0 0 7px rgb(205, 127, 50) , 0 0 10px rgb(205, 127, 50);
+}
+
+/* Grupo 16 page */
+.dev-div {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 700px;
+}
+
+.dev-div div img {
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.dev-div div {
+  margin: 30px;
+}
+
+.section-div {
+  background-image: url('https://images2.alphacoders.com/822/822456.jpg');
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+.dev-div a img {
+  background-color: white;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-left: 10px;
+  width: 30px;
+}
+
+.devs-media {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bodega {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-btn-div {
+  margin-bottom: 100px;
+}
+
+
+/* fonte do efeito flicker e do efeito neon:
+https://css-tricks.com/how-to-create-neon-text-with-css/ */
+
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 7px white , 0 0 10px white , 0 0 102px #0fa , 0 0 151px #0fa;
+  }
+
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
