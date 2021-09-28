@@ -1,4 +1,4 @@
-#### Projeto página de receitas
+# Projeto página de receitas
 Projeto desenvolvido utilizando React, ContextAPI e JavaScript.
 
 ## Sobre
